@@ -2,23 +2,21 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-const SolidButtoncontactus = (props) => {
+const SolidButtonlogin = (props) => {
   return (
     <>
-      <div
-        className={`solid-buttoncontactus-container ${props.rootClassName} `}
-      >
-        <button className="solid-buttoncontactus-contactus button Button">
-          {props.Contact_Us}
+      <div className={`solid-buttonlogin-container ${props.rootClassName} `}>
+        <button className="solid-buttonlogin-contactus button Button">
+          {props.login}
         </button>
       </div>
       <style jsx>
         {`
-          .solid-buttoncontactus-container {
+          .solid-buttonlogin-container {
             display: flex;
             position: relative;
           }
-          .solid-buttoncontactus-contactus {
+          .solid-buttonlogin-contactus {
             color: var(--dl-color-gray-white);
             border: none;
             padding-top: var(--dl-space-space-halfunit);
@@ -28,24 +26,20 @@ const SolidButtoncontactus = (props) => {
             padding-bottom: var(--dl-space-space-halfunit);
             background-color: var(--dl-color-primary-100);
           }
-
-          .solid-buttoncontactus-root-class-name11 {
-            align-self: center;
-          }
         `}
       </style>
     </>
   )
 }
 
-SolidButtoncontactus.defaultProps = {
-  Contact_Us: 'Contact Us!',
+SolidButtonlogin.defaultProps = {
   rootClassName: '',
+  login: 'Log In',
 }
 
-SolidButtoncontactus.propTypes = {
-  Contact_Us: PropTypes.string,
+SolidButtonlogin.propTypes = {
   rootClassName: PropTypes.string,
+  login: PropTypes.string,
 }
 
-export default SolidButtoncontactus
+export default SolidButtonlogin

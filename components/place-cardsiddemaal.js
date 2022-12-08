@@ -15,7 +15,7 @@ const PlaceCardsiddemaal = (props) => {
         <div className="place-cardsiddemaal-container1">
           <span className="place-cardsiddemaal-text">{props.text_dopa}</span>
           <span className="place-cardsiddemaal-text1">{props.description}</span>
-          <Link href="/s-i-d-d-e-m-a-a-l">
+          <Link href="/siddemaal">
             <a className="place-cardsiddemaal-link button Button">
               {props.button1}
             </a>

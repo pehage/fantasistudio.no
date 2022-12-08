@@ -2,7 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
+import SolidButtonlogin from '../components/solid-buttonlogin'
 import SolidButtoncontactus from '../components/solid-buttoncontactus'
+import SolidButtonexplore from '../components/solid-buttonexplore'
 import PlaceCardsiddemaal from '../components/place-cardsiddemaal'
 import PlaceCarddopa from '../components/place-carddopa'
 import PlaceCardsideprojects from '../components/place-cardsideprojects'
@@ -16,131 +18,136 @@ const Home = (props) => {
           <meta property="og:title" content="Fantasistudio" />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e237ae09-b3fb-4a0e-8ed4-7af0226d1f8c/c7116550-a4c8-42f4-873f-aa9079639936?org_if_sml=1"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e237ae09-b3fb-4a0e-8ed4-7af0226d1f8c/3dd1befe-82c8-4567-ad4f-e57a21c502ca?org_if_sml=1"
           />
         </Head>
-        <div className="home-top-container">
-          <div className="home-container1">
-            <nav data-role="Header" className="home-navbar">
-              <h1>FANTASISTUDIO</h1>
-              <div className="home-right-side">
-                <div className="home-links-container">
-                  <Link href="/">
-                    <a className="home-link">Home</a>
-                  </Link>
-                  <Link href="/privat-for-gs">
-                    <a className="home-link01">Privat for G&apos;s</a>
-                  </Link>
-                  <Link href="/d-o-p-a">
-                    <a className="home-link02">
-                      <span>DOPA</span>
-                      <br></br>
-                    </a>
-                  </Link>
-                  <Link href="/s-i-d-d-e-m-a-a-l">
-                    <a className="home-link03">
-                      <span>SIDDEMAAL</span>
-                      <br></br>
-                    </a>
-                  </Link>
-                  <Link href="/side-projects">
-                    <a className="home-link05">Side Projects</a>
-                  </Link>
+        <div className="home-container1">
+          <div className="home-container2">
+            <div className="home-container3">
+              <nav data-role="Header" className="home-navbar">
+                <h1 className="home-logo">FANTASISTUDIO</h1>
+                <div className="home-right-side">
+                  <div className="home-links-container">
+                    <Link href="/">
+                      <a className="home-link">Home</a>
+                    </Link>
+                    <Link href="/privat-for-gs">
+                      <a className="home-link01">Privat for G&apos;s</a>
+                    </Link>
+                    <Link href="/dopa">
+                      <a className="home-link02">
+                        <span>DOPA</span>
+                        <br></br>
+                      </a>
+                    </Link>
+                    <Link href="/siddemaal">
+                      <a className="home-link03">
+                        <span>SIDDEMAAL</span>
+                        <br></br>
+                      </a>
+                    </Link>
+                    <Link href="/side-projects">
+                      <a className="home-link05">Side Projects</a>
+                    </Link>
+                  </div>
+                  <SolidButtonlogin rootClassName="solid-buttonlogin-root-class-name"></SolidButtonlogin>
                 </div>
-                <SolidButtoncontactus rootClassName="solid-buttoncontactus-root-class-name"></SolidButtoncontactus>
-              </div>
-              <div data-role="BurgerMenu" className="home-burger-menu">
-                <svg viewBox="0 0 1024 1024" className="home-burger-menu">
-                  <path d="M810.667 725.333h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
-                  <path d="M810.667 426.667h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
-                  <path d="M810.667 128h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
-                </svg>
-              </div>
-              <div data-role="MobileMenu" className="home-mobile-menu">
-                <div className="home-nav">
-                  <div className="home-top">
-                    <h1>Travel</h1>
-                    <div
-                      data-role="CloseMobileMenu"
-                      className="home-close-menu"
-                    >
-                      <svg viewBox="0 0 1024 1024" className="home-icon03">
-                        <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                      </svg>
+                <div data-role="BurgerMenu" className="home-burger-menu">
+                  <svg viewBox="0 0 1024 1024" className="home-burger-menu">
+                    <path d="M810.667 725.333h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
+                    <path d="M810.667 426.667h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
+                    <path d="M810.667 128h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
+                  </svg>
+                </div>
+                <div data-role="MobileMenu" className="home-mobile-menu">
+                  <div className="home-nav">
+                    <div className="home-top">
+                      <h1>Travel</h1>
+                      <div
+                        data-role="CloseMobileMenu"
+                        className="home-close-menu"
+                      >
+                        <svg viewBox="0 0 1024 1024" className="home-icon03">
+                          <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="home-right-side1">
+                      <div className="home-links-container1">
+                        <span className="home-text04">Home</span>
+                        <span className="home-text05">About</span>
+                        <span className="home-text06">Tour Packages</span>
+                        <span>Contact</span>
+                      </div>
+                      <a href="#main-section" className="home-link06">
+                        <SolidButtoncontactus Contact_Us="Explore places"></SolidButtoncontactus>
+                      </a>
                     </div>
                   </div>
-                  <div className="home-right-side1">
-                    <div className="home-links-container1">
-                      <span className="home-text04">Home</span>
-                      <span className="home-text05">About</span>
-                      <span className="home-text06">Tour Packages</span>
-                      <span>Contact</span>
+                  <div className="home-follow-container">
+                    <span className="home-text08">
+                      Follow us on
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <div className="home-icons-container">
+                      <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="home-link07"
+                      >
+                        <svg
+                          viewBox="0 0 877.7142857142857 1024"
+                          className="home-icon05"
+                        >
+                          <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                        </svg>
+                      </a>
+                      <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="home-link08"
+                      >
+                        <svg
+                          viewBox="0 0 602.2582857142856 1024"
+                          className="home-icon07"
+                        >
+                          <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
+                        </svg>
+                      </a>
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="home-link09"
+                      >
+                        <svg
+                          viewBox="0 0 950.8571428571428 1024"
+                          className="home-icon09"
+                        >
+                          <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+                        </svg>
+                      </a>
                     </div>
-                    <a href="#main-section" className="home-link06">
-                      <SolidButtoncontactus Contact_Us="Explore places"></SolidButtoncontactus>
-                    </a>
                   </div>
                 </div>
-                <div className="home-follow-container">
-                  <span className="home-text08">
-                    Follow us on
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <div className="home-icons-container">
-                    <a
-                      href="https://instagram.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link07"
-                    >
-                      <svg
-                        viewBox="0 0 877.7142857142857 1024"
-                        className="home-icon05"
-                      >
-                        <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://facebook.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link08"
-                    >
-                      <svg
-                        viewBox="0 0 602.2582857142856 1024"
-                        className="home-icon07"
-                      >
-                        <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://twitter.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link09"
-                    >
-                      <svg
-                        viewBox="0 0 950.8571428571428 1024"
-                        className="home-icon09"
-                      >
-                        <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
+          <SolidButtoncontactus rootClassName="solid-buttoncontactus-root-class-name11"></SolidButtoncontactus>
+        </div>
+        <div className="home-top-container">
           <div className="home-hero">
             <div className="home-content-container">
-              <h1 className="Heading home-text09">FANTASISTUDIO</h1>
+              <h1 className="home-text09">FANTASISTUDIO</h1>
               <h2 className="home-subheading">FantasiStudio Welcomes You</h2>
               <span className="home-text10">For All Your Music Needs</span>
-              <SolidButtoncontactus Contact_Us="Explore homes"></SolidButtoncontactus>
+              <SolidButtonexplore rootClassName="solid-buttonexplore-root-class-name"></SolidButtonexplore>
             </div>
           </div>
         </div>
@@ -155,7 +162,7 @@ const Home = (props) => {
         </div>
         <div className="home-footer">
           <div className="home-menu">
-            <div className="home-container2">
+            <div className="home-container4">
               <img
                 alt="image"
                 src="/playground_assets/logo_fs-200h.png"
@@ -164,7 +171,7 @@ const Home = (props) => {
               <h1>FANTASISTUDIO</h1>
             </div>
             <div className="home-links-container2">
-              <div className="home-container3">
+              <div className="home-container5">
                 <a
                   href="https://example.com"
                   target="_blank"
@@ -203,7 +210,7 @@ const Home = (props) => {
                   />
                 </a>
               </div>
-              <div className="home-container4">
+              <div className="home-container6">
                 <a
                   href="https://example.com"
                   target="_blank"
@@ -302,17 +309,23 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .home-top-container {
-            width: 100%;
-            height: 600px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            background-size: cover;
-            background-image: url('https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1000');
-            background-position: 0% 40%;
-          }
           .home-container1 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .home-container2 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .home-container3 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -329,6 +342,9 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
+          .home-logo {
+            color: var(--dl-color-gray-black);
+          }
           .home-right-side {
             display: flex;
             align-items: center;
@@ -342,22 +358,27 @@ const Home = (props) => {
             justify-content: space-between;
           }
           .home-link {
+            color: var(--dl-color-gray-black);
             margin-right: var(--dl-space-space-doubleunit);
             text-decoration: none;
           }
           .home-link01 {
+            color: var(--dl-color-gray-black);
             margin-right: var(--dl-space-space-doubleunit);
             text-decoration: none;
           }
           .home-link02 {
+            color: var(--dl-color-gray-black);
             margin-right: var(--dl-space-space-doubleunit);
             text-decoration: none;
           }
           .home-link03 {
+            color: var(--dl-color-gray-black);
             margin-right: var(--dl-space-space-doubleunit);
             text-decoration: none;
           }
           .home-link05 {
+            color: var(--dl-color-gray-black);
             margin-right: var(--dl-space-space-doubleunit);
             text-decoration: none;
           }
@@ -473,9 +494,21 @@ const Home = (props) => {
             width: 24px;
             height: 24px;
           }
-          .home-hero {
-            flex: 1;
+          .home-top-container {
             width: 100%;
+            height: 493px;
+            display: flex;
+            align-items: center;
+            border-color: var(--dl-color-gray-black);
+            border-width: 1px;
+            flex-direction: column;
+            background-size: cover;
+            background-image: url('/playground_assets/ivar_art-1500w.png');
+            background-position: 0% 40%;
+          }
+          .home-hero {
+            width: 100%;
+            height: 475px;
             display: flex;
             max-width: 1000px;
             padding-top: var(--dl-space-space-tripleunit);
@@ -490,14 +523,30 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
+          .home-text09 {
+            color: var(--dl-color-gray-white);
+            transition: 0.3s;
+            font-family: Poppins;
+            font-weight: 700;
+            line-height: 1.55;
+            text-transform: none;
+            text-decoration: none;
+          }
+
+          .home-subheading {
+            color: var(--dl-color-gray-900);
+          }
           .home-text10 {
+            color: var(--dl-color-gray-white);
             padding-top: var(--dl-space-space-doubleunit);
             padding-bottom: var(--dl-space-space-doubleunit);
           }
           .home-main {
             width: 100%;
+            height: 613px;
             display: flex;
             position: relative;
+            margin-top: 68px;
             align-items: center;
             flex-direction: column;
             justify-content: flex-start;
@@ -535,7 +584,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-container2 {
+          .home-container4 {
             flex: 0 0 auto;
             width: 100px;
             height: auto;
@@ -553,7 +602,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-container3 {
+          .home-container5 {
             display: flex;
             align-items: flex-start;
             margin-left: 100px;
@@ -574,7 +623,7 @@ const Home = (props) => {
           .home-link13 {
             text-decoration: none;
           }
-          .home-container4 {
+          .home-container6 {
             display: flex;
             align-items: flex-start;
             margin-left: 100px;
@@ -676,7 +725,7 @@ const Home = (props) => {
               margin-bottom: var(--dl-space-space-tripleunit);
               justify-content: space-between;
             }
-            .home-container3 {
+            .home-container5 {
               margin-left: 0px;
             }
           }
@@ -706,7 +755,7 @@ const Home = (props) => {
             .home-link13 {
               margin-bottom: var(--dl-space-space-halfunit);
             }
-            .home-container4 {
+            .home-container6 {
               height: 100%;
               align-items: flex-start;
               margin-left: 50px;

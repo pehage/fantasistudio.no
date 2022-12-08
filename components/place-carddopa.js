@@ -15,7 +15,7 @@ const PlaceCarddopa = (props) => {
         <div className="place-carddopa-container1">
           <span className="place-carddopa-text">{props.text_dopa}</span>
           <span className="place-carddopa-text1">{props.description}</span>
-          <Link href="/d-o-p-a">
+          <Link href="/dopa">
             <a className="place-carddopa-link button Button">{props.button1}</a>
           </Link>
         </div>
