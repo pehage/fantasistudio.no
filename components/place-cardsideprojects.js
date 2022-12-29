@@ -83,6 +83,12 @@ const PlaceCardsideprojects = (props) => {
             .place-cardsideprojects-container {
               width: 200px;
             }
+            .place-cardsideprojects-text1 {
+              text-align: center;
+            }
+            .place-cardsideprojects-root-class-name {
+              align-self: flex-start;
+            }
           }
           @media (max-width: 479px) {
             .place-cardsideprojects-container {

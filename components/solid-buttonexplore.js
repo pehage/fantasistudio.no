@@ -33,13 +33,13 @@ const SolidButtonexplore = (props) => {
 }
 
 SolidButtonexplore.defaultProps = {
-  rootClassName: '',
   Explore: 'Explore!',
+  rootClassName: '',
 }
 
 SolidButtonexplore.propTypes = {
-  rootClassName: PropTypes.string,
   Explore: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default SolidButtonexplore

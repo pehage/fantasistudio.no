@@ -16,7 +16,7 @@ const PlaceCarddopa = (props) => {
           <span className="place-carddopa-text">{props.text_dopa}</span>
           <span className="place-carddopa-text1">{props.description}</span>
           <Link href="/dopa">
-            <a className="place-carddopa-link button Button">{props.button1}</a>
+            <a className="place-carddopa-link">{props.button1}</a>
           </Link>
         </div>
       </div>
@@ -56,6 +56,9 @@ const PlaceCarddopa = (props) => {
           }
           .place-carddopa-link {
             color: var(--dl-color-gray-black);
+            font-size: 14px;
+            font-family: Poppins;
+            font-weight: 600;
             padding-top: var(--dl-space-space-unit);
             border-color: var(--dl-color-primary-100);
             border-width: 1px;
@@ -63,6 +66,7 @@ const PlaceCarddopa = (props) => {
             border-radius: 50px;
             padding-right: var(--dl-space-space-doubleunit);
             padding-bottom: var(--dl-space-space-unit);
+            text-transform: none;
             text-decoration: none;
             background-color: var(--dl-color-gray-white);
           }
@@ -73,6 +77,13 @@ const PlaceCarddopa = (props) => {
           @media (max-width: 767px) {
             .place-carddopa-container {
               width: 200px;
+            }
+            .place-carddopa-container1 {
+              height: 220px;
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-halfunit);
+              padding-right: var(--dl-space-space-halfunit);
+              padding-bottom: var(--dl-space-space-unit);
             }
           }
           @media (max-width: 479px) {

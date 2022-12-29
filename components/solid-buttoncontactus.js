@@ -28,10 +28,6 @@ const SolidButtoncontactus = (props) => {
             padding-bottom: var(--dl-space-space-halfunit);
             background-color: var(--dl-color-primary-100);
           }
-
-          .solid-buttoncontactus-root-class-name11 {
-            align-self: center;
-          }
         `}
       </style>
     </>
